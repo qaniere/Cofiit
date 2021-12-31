@@ -78,6 +78,10 @@ a {
     animation: typing 3.5s steps(30, end), blink-cursor 1s step-end infinite;;
 }
 
+#mobile-menu-icon {
+    display: none;
+}
+
 .menu-item {
     height: 5vh;
     width: 10vw;
@@ -103,4 +107,46 @@ a {
     from, to { border-color: transparent }
     50% { border-color: black; }
 }
-  
+
+@media screen and (max-width: 992px) {
+
+    nav {
+        height: 11vh;
+    }
+
+    #title {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #logo {
+        height: 11vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    #banner-container {  
+        height: 88.6vh;
+    }
+    
+    #banner {
+        height: 88.6vh;
+    }
+    
+    #banner-text-container > h2 {
+
+        font-size: 15vw;
+        animation: none;
+        border-right: none;
+    }
+
+    #mobile-menu-icon {
+        height: 5vh;
+        display: block;
+        margin-left: auto;
+    }
+    
+}
