@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -9,6 +9,8 @@ nav {
 
     display: flex;
     align-items: center;
+
+    border-bottom: 0.4vh solid black;
 }
 
 a {
@@ -18,7 +20,12 @@ a {
 
 #logo {
     height: 15vh;
-    margin-left: 2vw;
+    margin-left: 2.5vw;
+}
+
+#title {
+    font-size: 5vh;
+    font-family: 'Rubik', sans-serif;
 }
 
 #menu {
@@ -29,16 +36,46 @@ a {
     align-items: center;
 }
 
-#banner-area {
-    height: 85vh;
+#banner-container {
+    position: relative;
+
+    height: 84.6vh;
     width: 100vw;
 }
 
 #banner {
-    height: 85vh;
+    height: 84.6vh;
     width: 100vw;
 
     object-fit: cover;
+}
+
+#banner-text-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: 84.6vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner-text-container > h2 {
+    font-size: 15vh;
+    font-family: 'Rubik', sans-serif;
+
+    margin-top: -35vh;
+    
+
+    overflow: hidden;
+    border-right: .10em solid black;
+    white-space: nowrap;
+    text-align: center;
+   
+    animation: typing 3.5s steps(30, end), blink-cursor 1s step-end infinite;;
 }
 
 .menu-item {
@@ -52,3 +89,18 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+.menu-item:hover {
+    font-weight: bold;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 45vw }
+}
+
+@keyframes blink-cursor {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+}
+  
