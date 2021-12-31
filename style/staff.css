@@ -1,0 +1,23 @@
+
+
+.pictures {
+    height: 150px;
+    width: 150px;
+    position: relative  ;
+}
+
+.spfp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.staff-description {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-basis: 300px;
+    flex-shrink: 200px;
+    position: relative;
+}

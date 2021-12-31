@@ -32,6 +32,7 @@ a {
 #banner-area {
     height: 85vh;
     width: 100vw;
+    position: absolute;
 }
 
 #banner {
@@ -51,4 +52,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.background {
+    position: relative;
 }
