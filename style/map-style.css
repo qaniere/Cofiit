@@ -1,0 +1,32 @@
+body{
+    background-color: /*#4a3f34*/ white;
+}
+#banner-container{
+    background-image: url(../medias/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100vw 0vh;
+}
+
+.map-text-container{
+
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: -50vh;
+    margin-left: 60vh;
+    margin-right: 60vh;
+}
+
+.item{
+
+    background-color: white;
+    border-radius: 1vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
