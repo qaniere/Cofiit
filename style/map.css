@@ -1,8 +1,11 @@
 body{
+    
     overflow-x: hidden;
+    background-color: #3b322d;
 }
 
 #map {
+
     height: 50vh;
     width: 50vw;
 }
@@ -16,8 +19,8 @@ body{
     align-items: center;
 
     margin-top: -50vh;
-    margin-left: 60vh;
-    margin-right: 60vh;
+    margin-left: 46vh;
+    margin-right: 46vh;
 }
 
 .item{
@@ -26,6 +29,14 @@ body{
     border-radius: 1vh;
     padding-left: 3vh;
     padding-right: 3vh;
+    padding-top: -5vh;
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
+}
+
+.paragraph{
+
+    text-align: justify;
+    font-size: large;
+
 }
