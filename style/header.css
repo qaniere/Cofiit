@@ -41,6 +41,7 @@ a {
 
     height: 84.6vh;
     width: 100vw;
+    position: absolute;
 }
 
 #banner {
@@ -90,6 +91,11 @@ a {
     justify-content: center;
 }
 
+
+.background {
+    position: relative;
+}
+
 .menu-item:hover {
     font-weight: bold;
 }
@@ -103,4 +109,3 @@ a {
     from, to { border-color: transparent }
     50% { border-color: black; }
 }
-  
