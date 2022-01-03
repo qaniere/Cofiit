@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../medias/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/staff.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <img src="../medias/logo.png" id="logo" alt="Le logo de notre entreprise, il représente une tasse de café">
+        <a href="../index.html"><img src="../medias/logo.png" id="logo" alt="Le logo de notre entreprise, il représente une tasse de café"></a>
+        <h1 id="title">Cofiit</h1>
         <div id="menu">
             <div class="menu-item">
                 <a href="../index.html">Accueil</a>
@@ -22,7 +24,7 @@
                 <a href="../pages/map.html">Nos machines</a>
             </div>
             <div class="menu-item">
-                <a href="../pages/map.html">Politique RSE</a>
+                <a href="../pages/rse.html">Politique RSE</a>
             </div>
             <div class="menu-item">
                 <a href="../pages/loyalty.html">Carte fidélité</a>
@@ -32,8 +34,55 @@
             </div>
         </div>
         </nav>
-        <div id="banner-area">
+        <div id="banner-container">
             <img id="banner" src="../medias/banner.jpg" alt="La bannière du site. Elle représente une tasse de café">
+            <div id="banner-text-container">
+                <h2>Notre équipe</h2>
+            </div>
+        </div>
+        <div class="staff-container">
+            <div class="staff-member">
+                <div class="profile-picture-circle">
+                    <img class="pictures" src="../medias/quentin-picture.jpeg" alt="Photo de profil du CEO">
+                </div>
+                <div class="description">
+                    <span class="title-block">Le CEO (Chief Executive Officer)</span>
+                    <p class="block">
+                        Quentin est le CEO, il a pour mission de définir avec l’équipe la stratégie globale de l’entreprise, de rencontrer les partenaires commerciaux, de s’assurer qu’il y a une ambiance bienveillante et propice au travail en équipe.
+                    </p>
+                </div>
+            </div>
+            <div class="staff-member">
+                <div class="profile-picture-circle">
+                    <img class="pictures" src="../medias/lucie-picture.jpg" alt="Photo de Lucie, notre CDO">
+                </div>
+                <div class="description">
+                    <span class="title-block">La CDO (Chief Design Officer)</span>
+                    <p class="block">
+                     Lucie est la CDO, elle est responsable de l’image de l’entreprise au travers des design qu’elle réalise. Elle s’occupe également de la présence de l’entreprise sur les réseaux sociaux.
+                    </p>
+                </div>
+            </div>
+            <div class="staff-member">  
+                <div class="profile-picture-circle">
+                    <img class="pictures" src="../medias/kamil-picture.jpg" alt="Photo de Kamil, notre CTO">
+                </div>
+                <div class="description">
+                    <span class="title-block">Le CTO (Chief Technical Officer)</span>
+                    <p class="block">
+                        Kamil est le CTO, il a pour mission de mener des veilles technologiques afin de choisir les meilleures technologies pour nos machines et dirige l’équipe de développeurs.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <h2>Nous contacter :</h2>
+            <p>
+                Mail : support@cofiit.fr
+            </p>
+            <p>
+                Tél : 01 32 36 33 34 34
+            </p>
         </div>
 </body>
 </html>

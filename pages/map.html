@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../medias/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/map.css"
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <img src="../medias/logo.png" id="logo" alt="Le logo de notre entreprise, il représente une tasse de café">
+        <a href="../index.html"><img src="../medias/logo.png" id="logo" alt="Le logo de notre entreprise, il représente une tasse de café"></a>
+        <h1 id="title">Cofiit</h1>
         <div id="menu">
             <div class="menu-item">
                 <a href="../index.html">Accueil</a>
@@ -32,8 +34,39 @@
             </div>
         </div>
         </nav>
-        <div id="banner-area">
-            <img id="banner" src="../medias/banner.jpg" alt="La bannière du site. Elle représente une tasse de café">
+        <div id="banner-container" >
+           <img id="banner" src="../medias/banner.jpg" alt="La bannière du site. Elle représente une tasse de café">
+            <div id="banner-text-container">
+                <h2>Nos machines</h2>
+            </div>
+        </div>
+        <div class="map-text-container">
+            <div class="item">
+                <p class="paragraph">
+                    Chez Cofiit, nous sommes très fiers des machines que nous avons conçues en toute intelligence grâce à notre équipe d'ingénieurs. Étant
+                    notre canal de vente principal, nous nous sommes fixé l'objectif de créer les meilleurs machines possible afin de répondre aussi bien aux besoin des clients
+                    , qu'à ceux de l'environnement.
+                </p>
+            </div>
+            <div class="item">
+                <h2>
+                    Où nous retrouver ?
+                </h2>
+                <p class="paragraph">
+                    Retrouvez l'emplacement de nos machines en fonction 24h/24 et 7j/7 pour vous satisfaire.
+                </p>
+                <iframe id="map" src="https://www.google.com/maps/d/u/1/embed?mid=1_SGYMnTrSXePxcEj-gVdIAn-lABYastT&ehbc=2E312F"></iframe>
+            </div>
+            <div class="item">
+                <h2>
+                    Un engagement écologique, tout en contribuant au progrès technique
+                </h2>
+                <p class="paragraph">
+                    Nos machines sont une véritable révolution dans le domaine de la distribution automatique. Nous utilisons la force de vos jambes grâce à un Velib recyclé implanté à la machine
+                     afin de produire une grande partie de l'électricité nécéssaire à son fonctionnement, et quand cela est possible, nous renforçons cet apport énergétique par des panneaux solaires.
+                     Ainsi, nous limitons l'utilisation d'électricité potentiellement produite à partir de sources d'énergie non renouvelable, et nous protégeons notre planète.
+                </p>
+            </div>
         </div>
 </body>
 </html>

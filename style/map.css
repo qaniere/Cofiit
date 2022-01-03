@@ -1,0 +1,35 @@
+body{
+    overflow-x: hidden;
+}
+
+#map {
+    height: 50vh;
+    width: 50vw;
+}
+
+.map-text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 2vh;
+    margin-left: 46vh;
+    margin-right: 46vh;
+}
+
+.item{
+    color: white;
+    background-color: #362d25;
+    border-radius: 1vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: -5vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+.paragraph{
+    text-align: justify;
+    font-size: large;
+}
