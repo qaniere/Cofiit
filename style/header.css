@@ -113,10 +113,7 @@ a {
 
     nav {
         height: 11vh;
-    }
-
-    #menu {
-        display: none;
+        transition: 1s;
     }
 
     #logo {
@@ -134,17 +131,43 @@ a {
     }
     
     #banner-text-container > h2 {
-
         font-size: 15vw;
         animation: none;
         border-right: none;
     }
 
     #mobile-menu-icon {
-        height: 5vh;
         display: block;
+
+        height: 5vh;
         margin-left: auto;
         margin-right: 4vw;
     }
-    
+
+    #menu {
+        display: none;
+        position: absolute;
+
+        top: -8vh;
+        margin-top: 20vh;
+        height: 25vh;
+ 
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-item {
+        margin-bottom: 0.5vh;
+        width: 100vw;
+        justify-content: flex-start;
+        transition: 1s;
+    }
+
+    .menu-item > a::before {
+        content: "- ";
+    }
+
+    .more-space {
+        padding-bottom: 36vh;
+    }   
 }
