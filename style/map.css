@@ -1,18 +1,13 @@
 body{
-    
     overflow-x: hidden;
-    background-color: #3b322d;
 }
 
 #map {
-
     height: 50vh;
     width: 50vw;
 }
 
-.map-text-container{
-
-    z-index: 1;
+.map-text-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -24,8 +19,8 @@ body{
 }
 
 .item{
-
-    background-color: white;
+    color: white;
+    background-color: #362d25;
     border-radius: 1vh;
     padding-left: 3vh;
     padding-right: 3vh;
@@ -35,8 +30,6 @@ body{
 }
 
 .paragraph{
-
     text-align: justify;
     font-size: large;
-
 }
