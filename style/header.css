@@ -114,10 +114,6 @@ a {
         height: 11vh;
     }
 
-    #title {
-        display: none;
-    }
-
     #menu {
         display: none;
     }
@@ -147,6 +143,7 @@ a {
         height: 5vh;
         display: block;
         margin-left: auto;
+        margin-right: 4vw;
     }
     
 }
