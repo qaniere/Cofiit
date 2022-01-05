@@ -1,13 +1,14 @@
 .staff-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .staff-member {
-    height: 35vh;
+    height: 50vh;
     width: 20vw;
     margin: 4vw;
-    padding: 1vh;
+    padding: 3vh;
 
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +35,7 @@
 }
 
 .block {
-    text-align: center;
+    text-align: justify;
 }
 
 .profile-picture-circle {
