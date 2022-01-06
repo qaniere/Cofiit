@@ -30,6 +30,7 @@
 
 .title-block {
     font-family: 'Rubik', sans-serif;
+    text-align: center;
 }
 
 .description {
@@ -61,4 +62,11 @@
     align-items: center;
     flex-direction: column;
     position: relative;
+}
+
+@media screen and (max-width: 992px) {
+
+    .staff-member {
+        width: 65vw;
+    }
 }
