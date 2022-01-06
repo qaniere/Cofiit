@@ -63,7 +63,7 @@ a {
     justify-content: center;
 }
 
-#banner-text-container > h2 {
+#banner-text-container > div > h2 {
     font-size: 15vh;
     font-family: 'Rubik', sans-serif;
 
@@ -75,7 +75,7 @@ a {
     white-space: nowrap;
     text-align: center;
    
-    animation: typing 3.5s steps(30, end), blink-cursor 1s step-end infinite;;
+    animation: typing 3.5s steps(40, end), blink-cursor 1s step-end infinite;;
 }
 
 #mobile-menu-icon {
@@ -100,7 +100,7 @@ a {
 
 @keyframes typing {
     from { width: 0 }
-    to { width: 45vw }
+    to { width: 100% }
 }
 
 @keyframes blink-cursor {
@@ -130,10 +130,11 @@ a {
         height: 88.6vh;
     }
     
-    #banner-text-container > h2 {
+    #banner-text-container > div > h2 {
         font-size: 15vw;
         animation: none;
         border-right: none;
+        white-space: pre-wrap;
     }
 
     #mobile-menu-icon {
