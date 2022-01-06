@@ -1,21 +1,19 @@
-body{
-    overflow-x: hidden;
+nav {
+    display: flex;
+    justify-content: center;
 }
 
 #map {
-    height: 50vh;
+    height: 70vh;
     width: 50vw;
 }
 
 .map-text-container {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     margin-top: 2vh;
-    margin-left: 46vh;
-    margin-right: 46vh;
 }
 
 .item{
@@ -27,9 +25,23 @@ body{
     padding-top: -5vh;
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
+    width: 60vw;
 }
 
 .paragraph{
     text-align: justify;
     font-size: large;
+}
+
+@media screen and (max-width: 992px) {
+
+    #map {
+        height: 40vh;
+        width: 70vw;
+    }
+
+    .item {
+        width: 70vw;
+    }
+    
 }
