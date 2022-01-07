@@ -4,8 +4,8 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
     overflow-x: hidden; 
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -23,6 +23,7 @@ a {
     text-decoration: none;
 }
 
+
 #logo {
     height: 15vh;
     margin-left: 2.5vw;
@@ -37,30 +38,29 @@ a {
     width: 89vw;
 
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-end;
 }
 
 #banner-container {
-    height: 84.6vh;
     width: 100vw;
+    height: 84.6vh;
     position: relative;
 }
 
 #banner {
-    height: 84.6vh;
     width: 100vw;
-
+    height: 84.6vh;
     object-fit: cover;
 }
 
 #banner-text-container {
-    position: absolute;
     left: 0;
     top: 0;
+    position: absolute;
 
-    height: 84.6vh;
     width: 100vw;
+    height: 84.6vh;
 
     display: flex;
     align-items: center;
@@ -74,9 +74,9 @@ a {
     font-family: 'Rubik', sans-serif;
 
     overflow: hidden;
-    border-right: .10em solid black;
     white-space: nowrap;
     text-align: center;
+    border-right: .10em solid black;
    
     animation: typing 3.5s steps(40, end), blink-cursor 1s step-end infinite;;
 }
@@ -86,18 +86,20 @@ a {
 }
 
 #arrow-container {
+    height: 20vh;
     width: 100vw;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20vh;
 }
 
 #round {
-    background-color: #7e9073;
-    border-radius: 50px;
     height: 14vh;
     width: 14vh;
+    border-radius: 50%;
+    background-color: #7e9073;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,11 +113,7 @@ a {
 
 #arrow {
     height: 10vh;
-    animation: jumping 0.5s infinite alternate;;
-}
-
-#arrow:hover {
-    animation-play-state: paused;
+    animation: jumping 0.5s infinite alternate;
 }
 
 
@@ -125,6 +123,7 @@ a {
 
     margin: 1vh;
     font-size: 3vh;
+    text-align: center;
 
     display: flex;
     align-items: center;
@@ -135,20 +134,22 @@ a {
     font-weight: bold;
 }
 
+
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
 }
 
 @keyframes blink-cursor {
-    from, to { border-color: transparent }
+    from { border-color: transparent }
     50% { border-color: black; }
 }
 
 @keyframes jumping {
-    from {transform: translateY(-1vh);}
+    from {transform: translateY(0);}
     to {transform: translateY(1vh) }
 }
+
 
 @media screen and (max-width: 992px) {
 
@@ -156,6 +157,7 @@ a {
         height: 11vh;
         transition: 1s;
     }
+
 
     #logo {
         height: 11vh;
@@ -178,24 +180,21 @@ a {
         white-space: pre-wrap;
     }
 
-    #mobile-menu-icon {
-        display: block;
-
+    #mobile-menu-icon { 
         height: 5vh;
+        display: block;
         margin-left: auto;
         margin-right: 4vw;
     }
 
     #menu {
         display: none;
+        flex-wrap: wrap;
         position: absolute;
 
         top: -8vh;
-        margin-top: 20vh;
         height: 25vh;
- 
-        display: flex;
-        flex-wrap: wrap;
+        margin-top: 20vh;        
     }
 
     #round:hover {
@@ -204,10 +203,10 @@ a {
     }
 
     .menu-item {
-        margin-bottom: 0.5vh;
         width: 100vw;
-        justify-content: flex-start;
         transition: 1s;
+        margin-bottom: 0.5vh;
+        justify-content: flex-start;
     }
 
     .menu-item > a::before {
