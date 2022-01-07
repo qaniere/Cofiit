@@ -1,7 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 
 nav {
@@ -61,14 +65,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
+
 
 #banner-text-container > div > h2 {
     font-size: 15vh;
     font-family: 'Rubik', sans-serif;
-
-    margin-top: -35vh;
-    
 
     overflow: hidden;
     border-right: .10em solid black;
@@ -81,6 +84,40 @@ a {
 #mobile-menu-icon {
     display: none;
 }
+
+#arrow-container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+
+#round {
+    background-color: #7e9073;
+    border-radius: 50px;
+    height: 14vh;
+    width: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.25s, width 0.25s;
+}
+
+#round:hover {
+    height: 16vh;
+    width: 16vh;
+}
+
+#arrow {
+    height: 10vh;
+    animation: jumping 0.5s infinite alternate;;
+}
+
+#arrow:hover {
+    animation-play-state: paused;
+}
+
 
 .menu-item {
     height: 5vh;
@@ -106,7 +143,11 @@ a {
 @keyframes blink-cursor {
     from, to { border-color: transparent }
     50% { border-color: black; }
+}
 
+@keyframes jumping {
+    from {transform: translateY(-1vh);}
+    to {transform: translateY(1vh) }
 }
 
 @media screen and (max-width: 992px) {
@@ -155,6 +196,11 @@ a {
  
         display: flex;
         flex-wrap: wrap;
+    }
+
+    #round:hover {
+        height: 14vh;
+        width: 14vh;
     }
 
     .menu-item {
