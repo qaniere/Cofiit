@@ -119,7 +119,8 @@ a {
 
 .menu-item {
     height: 5vh;
-    width: 10vw;
+    padding-left: 1vh;
+    padding-right: 1vh;
 
     margin: 1vh;
     font-size: 3vh;
@@ -214,6 +215,6 @@ a {
     }
 
     .more-space {
-        padding-bottom: 36vh;
+        padding-bottom: 42vh;
     }   
 }

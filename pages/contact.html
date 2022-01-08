@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../medias/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@600&display=swap" rel="stylesheet">
@@ -33,7 +34,7 @@
                 <a href="../pages/staff.html">Notre équipe</a>
             </div>
             <div class="menu-item">
-                <a href="#">Nous contacter</a>
+                <a href="#">Contact</a>
             </div>
         </div>
         </nav>
@@ -41,35 +42,34 @@
             <img id="banner" src="../medias/banner.webp" alt="La bannière du site. Elle représente une tasse de café">
             <div id="banner-text-container">
                 <div>
-                    <h2>Notre politique RSE</h2>
+                    <h2>Nous contacter</h2>
                 </div>
                 <div id="arrow-container">
                     <div id="round">
-                        <img id="arrow" src="../medias/arrow.png" alt="Une flèche qui sert à descendre dans la page">
+                        <a href="#contact-form"><img id="arrow" src="../medias/arrow.png" alt="Une flèche qui sert à descendre dans la page"></a>
                     </div>
                 </div>
             </div>
-            </div>
         </div>
         <main>
-            <form id="contact-form">   
-                <label> Nom : <input type="text" placeholder="Nom" required> </label>         
-                <label> Prénom : <input type="text" placeholder="Prénom" required> </label>
-                <br>
-                <label> Sujet de la requête : </label> 
-                <br>
-                <label> <input type="checkbox"> Problème de compte</label>
-                <br>
-                <label> <input type="checkbox"> Problème avec le système de fidelité</label>
-                <br>
-                <label> <input type="checkbox"> Suggestion</label>
-                <br>
-                <label> Votre requête : </label>
-                <br>
-                <textarea name="Requête" id="REQUEST" rows="10"  required>Écrivez votre requêt ici.</textarea>
-
-                <br>
-                <input type="submit" value="Envoyer">
+            <form id="contact-form">
+                <h2>Formulaire de contact</h2>
+                <p>Vous pouvez remplir le formulaire ci-dessous afin de nous contacter</p>
+                <div id="name-surname-container">   
+                    <label for="name"> Nom : <input type="text" id="name" placeholder="Nom" required> </label>         
+                    <label for="surname"> Prénom : <input type="text" id="surname" placeholder="Prénom" required> </label>
+                </div>    
+                <span> Objet de votre demande : </span> 
+                <label for="account-issues"> <input id="account-issues" type="checkbox"> Problème de compte</label>
+                <label for="loyalty-program-issues"> <input id="loyalty-program-issues" type="checkbox"> Problème avec le système de fidelité</label>
+                <label for="suggestion"> <input id="suggestion" type="checkbox"> Suggestion</label>
+                <label for="demand"> Votre demande : </label>
+                <div id="textarea-container">
+                    <textarea name="demande" id="demand" rows="10" required>Écrivez votre demande ici...</textarea>
+                </div>
+                <div id="button-area">
+                    <input id="button" type="submit" value="Envoyer">
+                </div>
             </form>
         </main>
         <script src="../scripts/header.js"></script>

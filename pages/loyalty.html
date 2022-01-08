@@ -34,7 +34,7 @@
                 <a href="../pages/staff.html">Notre équipe</a>
             </div>
             <div class="menu-item">
-                <a href="../pages/contact.html">Nous contacter</a>
+                <a href="../pages/contact.html">Contact</a>
             </div>
         </div>
         </nav>
@@ -46,22 +46,21 @@
                 </div>
                 <div id="arrow-container">
                     <div id="round">
-                        <a href="#login-form"><img id="arrow" src="../medias/arrow.png" alt="Une flèche qui sert à descendre dans la page"></a>                        
+                        <a href="#start"><img id="arrow" src="../medias/arrow.png" alt="Une flèche qui sert à descendre dans la page"></a>                        
                     </div>
                 </div>
             </div>
-            </div>
         </div>
-        <main>
+        <main id="start">
             <form id="login-form">
-                <img id="card-logo" src="../medias/logo.png">
+                <img id="card-logo" src="../medias/logo.png" alt="Le logo de la carte fidelité, il représente un gobelet de café">
                 <h2>Connexion</h2>
                 <div class="input-container">
                     <label for="username">Nom d'utilisateur :</label>
-                    <input id="username" name="username" placeholder="JohnDoe384"required>
+                    <input id="username" name="username" placeholder="JohnDoe384" required>
                 </div>
                 <div class="input-container">
-                    <label for"password>Votre mot de passe :</label>
+                    <label for="password">Votre mot de passe :</label>
                     <input id="password" type="password" required>
                 </div>
                 <div class="input-container">
@@ -71,6 +70,39 @@
                     <span id="connexion-result"></span>
                 </div>
             </form>
+            <div id="loyalty-container">
+                <div id="welcome-container">
+                   <h2>Bienvenue <span id="username-placeholder"></span> !</h2>
+                    <span>Votre solde est de <span id="balance-placeholder"></span> points. (Dernière mise à jour : <span id="datetime-placeholder"></span>)</span>
+                    <p id="rules"> Voici la liste des récompenses que vous pouvez réclamer. Lorsque qu'un cercle vert s'affiche à coté, votre solde
+                        de Cofiit-coins vous permet de vous offrir cette récompense. Cette page est uniquement informative, merci d'utiliser
+                        une machine Cofiit afin de pouvoir utilisers vos points.
+                    </p>
+                </div>
+                <div id="rewards-list">
+                    <div class="reward-container" data-points="10">
+                        <div class="content">
+                        <h2>Un café</h2>
+                        <span>10 points</span>
+                        <p>Pour remercier de votre fidelité, nous vous offrons un café !</p>
+                        </div>
+                    </div>
+                    <div class="reward-container" data-points="50">
+                        <div class="content">
+                        <h2>Un pain au chocolat</h2>
+                        <span>50 points</span>
+                        <p>Pour remercier de votre fidelité, nous vous offrons un pain au chocolat !</p>
+                        </div>
+                    </div>
+                    <div class="reward-container" data-points="100">
+                        <div class="content">
+                        <h2>Un maxi cookie</h2>
+                        <span>100 points</span>
+                        <p>Pour remercier de votre fidelité, nous vous offrons un maxi cookie !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <script src="../scripts/header.js"></script>
         <script src="../scripts/login.js"></script>
