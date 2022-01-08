@@ -24,7 +24,7 @@
                 <a href="../pages/map.html">Nos machines</a>
             </div>
             <div class="menu-item">
-                <a href="#">Politique RSE</a>
+                <a href="../pages/rse.html">Politique RSE</a>
             </div>
             <div class="menu-item">
                 <a href="../pages/loyalty.html">Carte fidélité</a>
@@ -33,7 +33,7 @@
                 <a href="../pages/staff.html">Notre équipe</a>
             </div>
             <div class="menu-item">
-                <a href="./pages/contact.html">Nous contacter</a>
+                <a href="#">Nous contacter</a>
             </div>
         </div>
         </nav>
@@ -51,6 +51,27 @@
             </div>
             </div>
         </div>
+        <main>
+            <form id="contact-form">   
+                <label> Nom : <input type="text" placeholder="Nom" required> </label>         
+                <label> Prénom : <input type="text" placeholder="Prénom" required> </label>
+                <br>
+                <label> Sujet de la requête : </label> 
+                <br>
+                <label> <input type="checkbox"> Problème de compte</label>
+                <br>
+                <label> <input type="checkbox"> Problème avec le système de fidelité</label>
+                <br>
+                <label> <input type="checkbox"> Suggestion</label>
+                <br>
+                <label> Votre requête : </label>
+                <br>
+                <textarea name="Requête" id="REQUEST" rows="10"  required>Écrivez votre requêt ici.</textarea>
+
+                <br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </main>
         <script src="../scripts/header.js"></script>
 </body>
 </html>
