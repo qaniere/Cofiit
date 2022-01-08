@@ -9,14 +9,10 @@ MOBILE_BUTTON.addEventListener("click", () => {
         isMenuVisible = false;
         NAVBAR.classList.remove("more-space");
 
-        setTimeout(() => {
-            MENU.style.display = "none";
-        }, 1000); //Use timemout to be synced with css animation
-
     } else {
+
         isMenuVisible = true;
         NAVBAR.classList.add("more-space");
         MENU.style.display = "flex";
     }
-
-})
+});
