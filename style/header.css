@@ -111,6 +111,11 @@ a {
     width: 16vh;
 }
 
+#round:active {
+    height: 10vh;
+    width: 10vh;
+}
+
 #arrow {
     height: 10vh;
     animation: jumping 0.5s infinite alternate;
