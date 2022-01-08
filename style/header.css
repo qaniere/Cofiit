@@ -98,7 +98,7 @@ a {
     height: 14vh;
     width: 14vh;
     border-radius: 50%;
-    background-color: #7e9073;
+    background-color: #73ab74;
     
     display: flex;
     align-items: center;
@@ -109,6 +109,11 @@ a {
 #round:hover {
     height: 16vh;
     width: 16vh;
+}
+
+#round:active {
+    height: 10vh;
+    width: 10vh;
 }
 
 #arrow {

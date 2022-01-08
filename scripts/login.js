@@ -90,7 +90,7 @@ LOGIN_FORM.addEventListener("submit", (event) => {
             REWARDS.forEach(element => {
 
                 if(DATABASE[username].balance >= element.dataset.points) {
-                    element.style.setProperty("--round_background-color", "#7e9073");
+                    element.style.setProperty("--round_background-color", "#90EE90");
                 }      
             });
 

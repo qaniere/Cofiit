@@ -20,7 +20,7 @@ form {
 
     border-radius: 10px;
     border: 3px solid black;
-    background-color: #ecf0f1;
+    background-color: #d2ebcc;
 }
 
 form > h2 {
@@ -63,7 +63,7 @@ form > h2 {
 
     border-radius: 10px;
     border: 3px solid black;
-    background-color: #ecf0f1;
+    background-color: #d2ebcc;
 
 }
 
@@ -81,11 +81,14 @@ form > h2 {
     
     border-radius: 10px;
     border: 3px solid black;
-    background-color: #ecf0f1;
+    background-color: #d2ebcc;
 }
   
 .reward-container::after {
     content: "";
+    background-image: url(../medias/check.png);
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
 
     width: 30px;
