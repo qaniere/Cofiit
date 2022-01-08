@@ -27,19 +27,34 @@ nav {
     margin-top: 2vh;
 }
 
-.item{
+.item {
     display: flex;
-    flex-direction: column;
-    color: white;
-    border-radius: 1vh;
-    background-color: #413b35;
+    flex-wrap: wrap;
+
+    border-radius: 10px;
+    border: 3px solid black;
+    background-color: #d2ebcc;
 
     width: 55vw;
+    padding-top: 1vh;
     padding-left: 2vh;   
     padding-right: 2vh;
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
 }
+
+.item > h2 {
+    width: 80%;
+}
+
+.paragraph > a {
+    text-decoration: underline;
+}
+
+.paragraph > a:hover {
+    font-weight: bold;
+}
+
 
 .item-n-picture{
     display: flex;
@@ -49,6 +64,13 @@ nav {
 .paragraph{
     font-size: large;
     text-align: justify;
+}
+
+.box-logo {
+    height: 7vh;
+    width: 7vh;
+    margin-top: 1vh;
+    margin-right: 0.5vw;
 }
 
 
@@ -61,6 +83,11 @@ nav {
 
 
     .item {
-        width: 70vw;
+        width: 77vw;
+    }
+
+    .item-n-picture{
+        display: flex;
+        flex-direction: column;
     }
 }
