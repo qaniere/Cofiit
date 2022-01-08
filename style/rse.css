@@ -1,3 +1,18 @@
+#forest-pic{
+    height: 40vh;
+    width: auto;
+}
+
+#flag{
+    height: 30vh;
+    width: auto;
+}
+
+#coffee{
+    height: 20vh;
+    width: auto;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -9,6 +24,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     width: 55vw;
 }
 
