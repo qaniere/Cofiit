@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Programme fidélité</title>
+    <title>Notre politique RSE</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../medias/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/header.css">
-    <link rel="stylesheet" href="../style/loyalty.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@600&display=swap" rel="stylesheet">
@@ -28,13 +27,13 @@
                 <a href="../pages/rse.html">Politique RSE</a>
             </div>
             <div class="menu-item">
-                <a href="#">Carte fidélité</a>
+                <a href="../pages/loyalty.html">Carte fidélité</a>
             </div>
             <div class="menu-item">
                 <a href="../pages/staff.html">Notre équipe</a>
             </div>
             <div class="menu-item">
-                <a href="../pages/contact.html">Nous contacter</a>
+                <a href="#">Nous contacter</a>
             </div>
         </div>
         </nav>
@@ -42,37 +41,37 @@
             <img id="banner" src="../medias/banner.webp" alt="La bannière du site. Elle représente une tasse de café">
             <div id="banner-text-container">
                 <div>
-                    <h2>Carte de fidelité</h2>
+                    <h2>Notre politique RSE</h2>
                 </div>
                 <div id="arrow-container">
                     <div id="round">
-                        <a href="#login-form"><img id="arrow" src="../medias/arrow.png" alt="Une flèche qui sert à descendre dans la page"></a>                        
+                        <img id="arrow" src="../medias/arrow.png" alt="Une flèche qui sert à descendre dans la page">
                     </div>
                 </div>
             </div>
             </div>
         </div>
         <main>
-            <form id="login-form">
-                <img id="card-logo" src="../medias/logo.png">
-                <h2>Connexion</h2>
-                <div class="input-container">
-                    <label for="username">Nom d'utilisateur :</label>
-                    <input id="username" name="username" placeholder="JohnDoe384"required>
-                </div>
-                <div class="input-container">
-                    <label for"password>Votre mot de passe :</label>
-                    <input id="password" type="password" required>
-                </div>
-                <div class="input-container">
-                    <input type="submit" value="Connexion">
-                </div>
-                <div class="input-container">
-                    <span id="connexion-result"></span>
-                </div>
+            <form id="contact-form">   
+                <label> Nom : <input type="text" placeholder="Nom" required> </label>         
+                <label> Prénom : <input type="text" placeholder="Prénom" required> </label>
+                <br>
+                <label> Sujet de la requête : </label> 
+                <br>
+                <label> <input type="checkbox"> Problème de compte</label>
+                <br>
+                <label> <input type="checkbox"> Problème avec le système de fidelité</label>
+                <br>
+                <label> <input type="checkbox"> Suggestion</label>
+                <br>
+                <label> Votre requête : </label>
+                <br>
+                <textarea name="Requête" id="REQUEST" rows="10"  required>Écrivez votre requêt ici.</textarea>
+
+                <br>
+                <input type="submit" value="Envoyer">
             </form>
         </main>
         <script src="../scripts/header.js"></script>
-        <script src="../scripts/login.js"></script>
 </body>
 </html>
