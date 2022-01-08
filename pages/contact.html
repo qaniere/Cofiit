@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../medias/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@600&display=swap" rel="stylesheet">
@@ -41,7 +42,7 @@
             <img id="banner" src="../medias/banner.webp" alt="La bannière du site. Elle représente une tasse de café">
             <div id="banner-text-container">
                 <div>
-                    <h2>Notre politique RSE</h2>
+                    <h2>Nous contacter</h2>
                 </div>
                 <div id="arrow-container">
                     <div id="round">
@@ -49,14 +50,15 @@
                     </div>
                 </div>
             </div>
-            </div>
         </div>
         <main>
-            <form id="contact-form">   
-                <label> Nom : <input type="text" placeholder="Nom" required> </label>         
-                <label> Prénom : <input type="text" placeholder="Prénom" required> </label>
+            <form id="contact-form">
+                <div class="nom-prenom">   
+                    <label> Nom : <input type="text" placeholder="Nom" required> </label>         
+                    <label> Prénom : <input type="text" placeholder="Prénom" required> </label>
+                </div>    
                 <br>
-                <label> Sujet de la requête : </label> 
+                <label> Sujet de la demande : </label> 
                 <br>
                 <label> <input type="checkbox"> Problème de compte</label>
                 <br>
@@ -64,12 +66,15 @@
                 <br>
                 <label> <input type="checkbox"> Suggestion</label>
                 <br>
-                <label> Votre requête : </label>
+                <label> Votre demande : </label>
                 <br>
-                <textarea name="Requête" id="REQUEST" rows="10"  required>Écrivez votre requêt ici.</textarea>
-
+                <div class="demande">
+                    <textarea name="demande" id="DEMAND" rows="10"  required>Écrivez votre demande ici.</textarea>
+                </div>
                 <br>
-                <input type="submit" value="Envoyer">
+                <div class="button-area">
+                    <input id="button" type="submit" value="Envoyer">
+                </div>
             </form>
         </main>
         <script src="../scripts/header.js"></script>
