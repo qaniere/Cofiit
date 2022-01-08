@@ -1,19 +1,22 @@
 #forest-pic{
     height: 40vh;
     width: auto;
+    order: -1;
 }
 
 #flag{
     height: 30vh;
     width: auto;
+    order: 1;
 }
 
 #coffee{
-    height: 20vh;
+    height: 30vh;
     width: auto;
 }
 
 .container{
+    margin: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,18 +24,19 @@
 
 .rse-text-container{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
-    width: 55vw;
+    width: 60vw;
 }
 
 .item{
     background-color: #413b35;
-    margin-top: 2.5vh;
-    margin-bottom: 2.5vh;
-    margin: 2.5vh;
+    margin: 3.5vh;
     padding: 2vh;
     color: white;
+}
+
+.pic-text{
+    display: flex;
+    align-items: center;
 }
