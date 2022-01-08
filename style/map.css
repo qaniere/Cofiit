@@ -6,22 +6,28 @@ nav {
 #map {
     height: 70vh;
     width: 50vw;
+    align-self: center;
+}
+
+#map-item{
+    padding-bottom: 2vh;
 }
 
 .map-text-container {
     display: flex;
     align-items: center;
     flex-direction: column;
-
     margin-top: 2vh;
 }
 
 .item{
+    display: flex;
+    flex-direction: column;
     color: white;
     border-radius: 1vh;
-    background-color: #362d25;
+    background-color: #413b35;
 
-    width: 60vw;
+    width: 55vw;
     padding-left: 2vh;   
     padding-right: 2vh;
     margin-top: 2.5vh;
