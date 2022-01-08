@@ -12,6 +12,9 @@ const KAMIL_PIC = document.getElementById("kamil-picture");
 clicks["cookie"] = 0;
 const COOKIE_PIC = document.getElementById("cookie-picture");
 
+clicks["chipie"] = 0;
+const CHIPIE_PIC = document.getElementById("chipie-picture");
+
 QUENTIN_PIC.addEventListener("click", () => {
 
     clicks["quentin"]++;
@@ -61,5 +64,18 @@ COOKIE_PIC.addEventListener("click", () => {
     } else if(clicks["cookie"] === 3) {
         COOKIE_PIC.src = "../medias/staff-pictures/cookie-picture.jpg";
         clicks["cookie"] = 0;
+    }
+});
+
+CHIPIE_PIC.addEventListener("click", () => {
+
+    clicks["chipie"]++;
+    
+    if(clicks["chipie"] === 2) {
+        CHIPIE_PIC.src = "../medias/staff-pictures/chipie-petpet.gif";
+
+    } else if(clicks["chipie"] === 3) {
+        CHIPIE_PIC.src = "../medias/staff-pictures/chipie-picture.jpg";
+        clicks["chipie"] = 0;
     }
 });

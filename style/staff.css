@@ -31,13 +31,23 @@
 
 .title-block {
     text-align: center;
-    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
 }
 
 .description {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: center;
+}
+
+.name {
+    width: 100%;
+    font-family: 'Rubik';
+    font-size: 4vh;
+    text-align: center;
 }
 
 .block {
