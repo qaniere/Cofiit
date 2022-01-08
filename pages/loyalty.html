@@ -43,7 +43,7 @@
                 </div>
                 <div id="arrow-container">
                     <div id="round">
-                        <img id="arrow" src="../medias/arrow.png" alt="Une flèche qui sert à descendre dans la page">
+                        <a href="#login-form"><img id="arrow" src="../medias/arrow.png" alt="Une flèche qui sert à descendre dans la page"></a>                        
                     </div>
                 </div>
             </div>
@@ -51,9 +51,22 @@
         </div>
         <main>
             <form id="login-form">
-                <input id="username" placeholder="username"required>
-                <input id="password" type="password" placeholder="password" required>
-                <input type="submit" value="Login">
+                <img id="card-logo" src="../medias/logo.png">
+                <h2>Connexion</h2>
+                <div class="input-container">
+                    <label for="username">Nom d'utilisateur :</label>
+                    <input id="username" name="username" placeholder="JohnDoe384"required>
+                </div>
+                <div class="input-container">
+                    <label for"password>Votre mot de passe :</label>
+                    <input id="password" type="password" required>
+                </div>
+                <div class="input-container">
+                    <input type="submit" value="Connexion">
+                </div>
+                <div class="input-container">
+                    <span id="connexion-result"></span>
+                </div>
             </form>
         </main>
         <script src="../scripts/header.js"></script>

@@ -1,6 +1,8 @@
 const LOGIN_FORM = document.getElementById("login-form");
 const USERNAME_INPUT = document.getElementById("username");
 const PASSWORD_INPUT = document.getElementById("password");
+const RESULT_SPAN = document.getElementById("connexion-result")
+
 const DATABASE = {
     "user1": "fee72ff13e4763ac5ac7f0456b8d60ed31a4d4ceef2ab61d51f2e7b70eeca98c8b4274617b18b2f0fbcb0a46328683056b5c2fd1c5de94302bbc7df49ebb0d30"
 }
@@ -34,11 +36,13 @@ LOGIN_FORM.addEventListener("submit", (event) => {
     login(USERNAME_INPUT.value, PASSWORD_INPUT.value).then( (login_successful) => {
 
         if(login_successful) {
-            alert("Connexion réussie");
+            LOGIN_FORM.style.animation = "2s disappearance";
+            window.setTimeout(() => {
+                LOGIN_FORM.style.display = "none";
+            }, 2000);
 
         } else {
-            alert("identifiants incorrects");
+            RESULT_SPAN.innerHTML = "Identifiants incorrects.";
         }
     });
 });
-
