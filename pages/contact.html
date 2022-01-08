@@ -46,33 +46,28 @@
                 </div>
                 <div id="arrow-container">
                     <div id="round">
-                        <img id="arrow" src="../medias/arrow.png" alt="Une flèche qui sert à descendre dans la page">
+                        <a href="#contact-form"><img id="arrow" src="../medias/arrow.png" alt="Une flèche qui sert à descendre dans la page"></a>
                     </div>
                 </div>
             </div>
         </div>
         <main>
             <form id="contact-form">
-                <div class="nom-prenom">   
-                    <label> Nom : <input type="text" placeholder="Nom" required> </label>         
-                    <label> Prénom : <input type="text" placeholder="Prénom" required> </label>
+                <h2>Formulaire de contact</h2>
+                <p>Vous pouvez remplir le formulaire ci-dessous afin de nous contacter</p>
+                <div id="name-surname-container">   
+                    <label for="name"> Nom : <input type="text" id="name" placeholder="Nom" required> </label>         
+                    <label for="surname"> Prénom : <input type="text" id="surname" placeholder="Prénom" required> </label>
                 </div>    
-                <br>
-                <label> Sujet de la demande : </label> 
-                <br>
-                <label> <input type="checkbox"> Problème de compte</label>
-                <br>
-                <label> <input type="checkbox"> Problème avec le système de fidelité</label>
-                <br>
-                <label> <input type="checkbox"> Suggestion</label>
-                <br>
-                <label> Votre demande : </label>
-                <br>
-                <div class="demande">
-                    <textarea name="demande" id="DEMAND" rows="10"  required>Écrivez votre demande ici.</textarea>
+                <span> Objet de votre demande : </span> 
+                <label for="account-issues"> <input id="account-issues" type="checkbox"> Problème de compte</label>
+                <label for="loyalty-program-issues"> <input id="loyalty-program-issues" type="checkbox"> Problème avec le système de fidelité</label>
+                <label for="suggestion"> <input id="suggestion" type="checkbox"> Suggestion</label>
+                <label for="demand"> Votre demande : </label>
+                <div id="textarea-container">
+                    <textarea name="demande" id="demand" rows="10" required>Écrivez votre demande ici...</textarea>
                 </div>
-                <br>
-                <div class="button-area">
+                <div id="button-area">
                     <input id="button" type="submit" value="Envoyer">
                 </div>
             </form>
