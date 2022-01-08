@@ -13,6 +13,13 @@ nav {
     padding-bottom: 2vh;
 }
 
+#technicien{
+    height: 30vh;
+    width: auto;
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+}
+
 .map-text-container {
     display: flex;
     align-items: center;
@@ -32,6 +39,11 @@ nav {
     padding-right: 2vh;
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
+}
+
+.item-n-picture{
+    display: flex;
+    flex-direction: row;
 }
 
 .paragraph{

@@ -1,0 +1,46 @@
+#forest-pic{
+    height: 40vh;
+    width: auto;
+    order: -1;
+}
+
+#flag{
+    height: 30vh;
+    width: auto;
+    order: 1;
+}
+
+#coffee{
+    height: 30vh;
+    width: auto;
+}
+
+.container{
+    margin: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rse-text-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60vw;
+}
+
+.item{
+    background-color: #413b35;
+    margin: 3.5vh;
+    padding: 2vh;
+    color: white;
+    border: black solid 2px;
+    max-width: 40vw;
+    box-shadow: gray 5px 5px 3px;
+    text-align: justify;
+}
+
+.pic-text{
+    display: flex;
+    align-items: center;
+}
