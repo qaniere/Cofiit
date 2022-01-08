@@ -25,7 +25,7 @@
 .rse-text-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     width: 60vw;
 }
 
@@ -34,6 +34,10 @@
     margin: 3.5vh;
     padding: 2vh;
     color: white;
+    border: black solid 2px;
+    max-width: 40vw;
+    box-shadow: gray 5px 5px 3px;
+    text-align: justify;
 }
 
 .pic-text{
