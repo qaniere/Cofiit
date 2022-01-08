@@ -2,6 +2,7 @@ main {
     padding: 5vh;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 form {
@@ -15,10 +16,17 @@ form {
     border-radius: 10px;
     border: 3px solid black;
     background-color: #ecf0f1;
+
+    display: none;
 }
 
 form > h2 {
     padding-top: -1vh;
+}
+
+#rules {
+    width: 50vw;
+    text-align: justify;
 }
 
 
@@ -26,9 +34,54 @@ form > h2 {
     height: 10vh;
 }
 
+#rewards-list {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#rewards-list::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 45vw;
+    margin-left: -3px;
+}
+
 
 .input-container {
     width: 100%;
+}
+
+.reward-container { 
+    height: 16vh;
+    width: 30vw;
+    position: relative;
+    padding: 10px 40px;
+    margin-top: 5vh;
+    
+    border-radius: 10px;
+    border: 3px solid black;
+    background-color: #ecf0f1;
+}
+  
+.reward-container::after {
+    content: "";
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+    top: 8vh;
+    left: 43.5vw;
+    
+    background-color: white;
+    border: 3px solid black;
+    
+    border-radius: 50%;
+    z-index: 1;
 }
 
 
@@ -48,4 +101,22 @@ form > h2 {
         padding-top: 0vh;
     }
 
+    #rules {
+        width: 70vw;
+    }
+
+    #rewards-list::after { 
+        left: 75vw;
+    }
+
+
+    .reward-container {
+        padding: 1vw;
+        height: auto;
+        width: 60vw;
+    }
+
+    .reward-container::after {
+        left: 112%;
+    }
 }
