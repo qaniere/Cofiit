@@ -27,3 +27,20 @@
 .small-title{
     font-size: 25px;
 }
+
+@media screen and (max-width: 1024px) {
+
+    .welcome-text{
+        width: 80vw;
+
+    }
+
+    #big-title{
+        font-size: 50px;
+    }
+
+    .item{
+        max-width: 70vw;
+        font-size: 20px;
+    }
+}
