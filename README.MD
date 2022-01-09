@@ -11,11 +11,22 @@ Voici les listes des choses que nous avons mises en places afin de rendre notre 
 
 * **L'attribut "alt"** : Toutes les images du site possèdent un attribut "alt", ce qui permet aux lecteurs d'écran de lire l'image. 
 
-* **Une palette de couleur réfléchie** : En limitant les contrastes sur notre palette de couleur, on rend le site plus accessible aux personnes daltonniennes
+* **Les rôles** : Ajout de l'attribut rôle (menu, menu-item, main, form par exemple) sur certains élements HTML  avant de faciliter l'usage de lecteurs d'écrans. Pour certains élements (nav, form, main par exemple), cela se fait automatiquement.
 
-* **Les labels** : Les labels de nos formulaires ont tous l'attribut "for" relié à un attribut "name" d'une input. Cela permet de lier l'input et le label pour les lecteurs d'écran notamment.
+* **Attribut title sur le iframe** : Sur l'iframe sur la page map.html, l'attribut title permet aux lecteurs d'écran de savoir ce contient cette iframe.
+
+
+Quelques outils que nous avons utilisés : 
+
+* **Checker W3C :** Une extension Visual Studio Code qui permet de vérifier si le code HTML/CSS est conforme aux standards W3C du web
+* **Lighthouse** : Un outil open-source directement integré dans les outils de développement Google Chrome et qui donne une note sur le SEO, l'accessibilité, les perfomances. Note de 100/100 dans les domaines pour note site.
 
 
 ## SEO
 
-tba...
+* **Hiérarchie des éléments** : Respect de la hiérarchie des élements HTML (De H1 le plus important, au H6 le moins important) afin de que les moteurs de recherche comprennent plus facilement comment le site est structuré et ainsi augmenter son référencement.
+
+* **Balises meta** : Usage des balises metas (auteur, copyright, description de la page, etc...) afin d'aides les moteurs de recherche à mieux comprendre le contenu de la page et ainsi d'augmenter son référencement.
+
+* **Les attributs "alt"** : La présence de attributs "alt" augmentent le référencement de la page.
+

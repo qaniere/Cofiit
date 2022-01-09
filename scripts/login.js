@@ -15,13 +15,11 @@ const DATABASE = {
     "Michel": {
         "hash": "1271dcd07b674d41aa7c4c292d699122e8519f586f5308bc486e0de2f5c9965cbb2b8051261f20dc3b65b7453576f16bdbf17150e54b4470d3dd819cdd329451",
         "balance": 50
-        // C@fé08
     },
 
     "Fatma": {
         "hash": "38a46ac88d5d952dbb213d2bd18d8055dd2b647d95ed4dae82ff292841d1443db0604a642bd299e400d855d27898373bdc043da444c610b3b593149cefb879fe",
         "balance": 150
-        // canada
     },
 
     "Selma": {
@@ -33,7 +31,6 @@ const DATABASE = {
     "Patrick": {
         "hash": "f90ddd77e400dfe6a3fcf479b00b1ee29e7015c5bb8cd70f5f15b4886cc339275ff553fc8a053f8ddc7324f45168cffaf81f8c3ac93996f6536eef38e5e40768",
         "balance": 0
-        // <one space>
     }
 }
 

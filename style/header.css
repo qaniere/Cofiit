@@ -69,7 +69,7 @@ a {
 }
 
 
-#banner-text-container > div > h2 {
+#banner-text-container > div > h1 {
     font-size: 15vh;
     font-family: 'Rubik', sans-serif;
 
@@ -179,7 +179,7 @@ a {
         height: 88.6vh;
     }
     
-    #banner-text-container > div > h2 {
+    #banner-text-container > div > h1 {
         font-size: 15vw;
         animation: none;
         border-right: none;
