@@ -6,7 +6,8 @@ nav {
 #map {
     height: 70vh;
     width: 50vw;
-    align-self: center;
+    justify-self: center;
+    flex: 1;
 }
 
 #map-item{
