@@ -2,17 +2,20 @@
     height: 40vh;
     width: auto;
     order: -1;
+    box-shadow: gray 5px 5px 3px;
 }
 
 #flag{
     height: 30vh;
     width: auto;
     order: 1;
+    box-shadow: gray 5px 5px 3px;
 }
 
 #coffee{
     height: 30vh;
     width: auto;
+    box-shadow: gray 5px 5px 3px;
 }
 
 .container{
@@ -43,4 +46,31 @@
 .pic-text{
     display: flex;
     align-items: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    body{
+        font-size: 20px;
+    }
+
+    #forest-pic{
+        height: 32vh;
+    }
+
+    .container{
+        margin: 2vh;
+    }
+    .rse-text-container{
+        width: 100vw;
+    }
+
+    .item{
+        max-width: 80vw;
+    }
+
+    .pic-text{
+        flex-direction: column;
+    }
 }
