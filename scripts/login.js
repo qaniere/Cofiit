@@ -80,8 +80,9 @@ LOGIN_FORM.addEventListener("submit", (event) => {
             window.setTimeout(() => {
                 LOGIN_FORM.style.display = "none";
                 LOYALTY_CONTAINER.style.display = "block";
+                LOYALTY_CONTAINER.classList.add("appearing");
 
-            }, 700);
+            }, 500);
 
             USERNAME_SPAN.innerHTML = username;
             BALANCE_SPAN.innerHTML = DATABASE[username].balance;
