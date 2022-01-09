@@ -11,7 +11,7 @@ a:hover {
 }
 
 .staff-member {
-    height: 50vh;
+    min-height: 50vh;
     width: 20vw;
 
     padding: 3vh;
