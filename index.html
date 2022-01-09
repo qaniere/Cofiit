@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./medias/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@600&display=swap" rel="stylesheet">
@@ -45,11 +46,55 @@
                 </div>
                 <div id="arrow-container">
                     <div id="round">
-                        <img id="arrow" src="./medias/arrow.png" alt="Une flèche qui sert à descendre dans la page">
+                        <a href="#start"><img id="arrow" src="./medias/arrow.png" alt="Une flèche qui sert à descendre dans la page"></a>
                     </div>
                 </div>
             </div>
         </div>
         <script src="./scripts/header.js"></script>
+    <main id="start">
+        <div class="container">
+            <div class="welcome-text">
+                <div id="big-title">
+                    <h3>
+                        Bienvenue chez Cofiit !
+                    </h3>
+                </div>
+                
+                <div class="item">
+                    <h3 class="small-title">
+                        Qui sommes-nous ?
+                    </h3>
+                    <p>
+                        Nous sommes une start-up conviviale ayant vu le jour en novembre 2021, produisant des distributeurs automatiques <u><a href="./pages/rse.html">écologiques et solidaires</a></u>.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3 class="small-title">
+                        Notre histoire
+                    </h3>
+                    <p>
+                        Notre équipe s’est rencontrée sur les bancs de l'université : Elle suivait les mêmes cours ensemble et prenait souvent des pauses café ensemble. Les machines de l’université tombant souvent en panne,
+                        il n’était pas rare que l'on doive marcher dix voire quinze minutes pour trouver une machine fonctionnelle. Imaginé comme une blague, nous avons créé l'application WHERE COFFEE,
+                        permettant à tous les étudiants de savoir si une machine est fonctionnelle ou non.
+                    </p>
+                    <p>
+                        Nous nous sommes dits par la suite que pour que personne n'ait à subir cet affront, nous n’allions pas nous contenter de fournir un service qui permet de connaître l’état de fonctionnement des machines de l'université,
+                        mais que nous allions <em>créer</em> nos propres machines. Notre ambition étant de créer les meilleurs machines de distribution, excellant dans tous les domaines, et cela tout en adoptant une démarche écologique.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3 class="small-title">
+                        Où nous situons-nous ?
+                    </h3>
+                    <p>
+                        Pour le moment, notre siège et nos machines sont basés en Île de France, mais nous comptons bien élargir notre champ d'action à l'avenir. Les emplacements de nos machines sont disponibles <u><a href="./pages/map.html">ici</a></u>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
