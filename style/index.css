@@ -42,5 +42,6 @@
     .item{
         max-width: 70vw;
         font-size: 20px;
+        text-align:start;
     }
 }
